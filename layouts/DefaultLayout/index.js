@@ -14,7 +14,7 @@ const DefaultLayout = ({ children }) => (
 
     <Navbar />
 
-    <div className="mt-7 flex lg:justify-center overflow-x-auto overflow-hidden">
+    <div className="mt-7 flex lg:justify-center overflow-x-scroll overflow-hidden">
       {children}
     </div>
   </>

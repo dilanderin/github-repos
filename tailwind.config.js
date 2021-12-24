@@ -1,11 +1,15 @@
 module.exports = {
-  mode: "jit",
+  mode: 'jit',
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    theme: {
+      minWidth: {
+        '1/2': '50%',
+      },
+    },
   },
   plugins: [],
 };

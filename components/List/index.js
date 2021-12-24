@@ -3,7 +3,10 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export const List = ({ list }) => {
-  const [favoritesList, setFavoritesList] = useLocalStorage('favoriteRepos');
+  const [favoritesList, setFavoritesList] = useLocalStorage(
+    'favoriteRepos',
+    [],
+  );
 
   // Hook
   function useLocalStorage(key, initialValue) {
@@ -43,7 +46,7 @@ export const List = ({ list }) => {
   };
 
   return (
-    <table className="table-auto w-100">
+    <table className="table-auto">
       <thead className="bg-gray-50">
         <tr>
           <th className="px-6 py-2 text-xs text-gray-500">Name</th>

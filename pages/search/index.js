@@ -19,7 +19,7 @@ const Search = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="mt-5 w-100 m-auto">
       <div className="flex mb-5 w-full">
         <form className="flex w-full" onSubmit={searchRepos}>
           <input

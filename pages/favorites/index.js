@@ -31,13 +31,13 @@ const Favorites = () => {
   }
 
   return (
-    <>
+    <div className="mt-5 w-100 m-auto">
       {favoritesList?.length > 0 ? (
         <List list={favoritesList} />
       ) : (
         <div>You don't have any favorites</div>
       )}
-    </>
+    </div>
   );
 };
 

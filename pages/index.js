@@ -17,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div className="mt-5 w-100 m-auto">
       {popularRepos.length > 0 && !loading ? (
         <List list={popularRepos} />
       ) : (
@@ -27,7 +27,7 @@ const Home = () => {
       {error && <div>Something happened. {error}</div>}
 
       {loading && <div>Loading...</div>}
-    </>
+    </div>
   );
 };
 
