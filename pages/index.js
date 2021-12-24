@@ -17,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="mt-5 w-100 m-auto">
+    <div className="mt-5 w-100 m-auto overflow-x-auto">
       {popularRepos.length > 0 && !loading ? (
         <List list={popularRepos} />
       ) : (

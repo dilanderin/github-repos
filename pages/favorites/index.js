@@ -31,7 +31,7 @@ const Favorites = () => {
   }
 
   return (
-    <div className="mt-5 w-100 m-auto">
+    <div className="mt-5 w-100 m-auto overflow-x-scroll">
       {favoritesList?.length > 0 ? (
         <List list={favoritesList} />
       ) : (

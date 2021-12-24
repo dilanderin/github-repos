@@ -20,7 +20,7 @@ const Repository = ({ owner, name }) => {
   }, []);
 
   return (
-    <div className="mt-5 w-100 m-auto bg-white p-9 min-w-[50%]">
+    <div className="mt-5 w-100 m-auto bg-white p-9 min-w-[50%] overflow-x-scroll">
       {repoDetails ? (
         <div className="flex flex-col bg-white">
           <div className="mb-5">

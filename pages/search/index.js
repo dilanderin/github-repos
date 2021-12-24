@@ -20,8 +20,8 @@ const Search = () => {
 
   return (
     <div className="mt-5 w-100 m-auto">
-      <div className="flex mb-5 w-full">
-        <form className="flex w-full" onSubmit={searchRepos}>
+      <div className="flex mb-5">
+        <form className="flex" onSubmit={searchRepos}>
           <input
             type="search"
             id="search"
@@ -35,11 +35,13 @@ const Search = () => {
         </form>
       </div>
 
-      {searchList.length > 0 ? (
-        <List list={searchList} />
-      ) : (
-        <div>No result found</div>
-      )}
+      <div className="overflow-x-scroll">
+        {searchList.length > 0 ? (
+          <List list={searchList} />
+        ) : (
+          <div>No result found</div>
+        )}
+      </div>
     </div>
   );
 };
